@@ -9,6 +9,7 @@
   "author": "Michael Yee",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "knex": "^2.4.2",
     "openai": "^3.2.1",
     "pg": "^8.10.0"
