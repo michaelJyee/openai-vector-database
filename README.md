@@ -3,8 +3,16 @@
 
 Basic example of how to use OpenAI's embeddings API to generate text embeddings and save them to a Postgres vector database.
 
-**Vector databases of animal descriptions like: "Penguins - Flightless birds, known for their black and white feathers and waddling walk."**
-**And search with something like : 'that bird that cannot fly'**
+```
+Vector databases of animal descriptions as vectors (embeddings) : 
+  "Penguins - Flightless birds, known for their black and white feathers and waddling walk."
+  "Cats - Domesticated mammals, known for their independent and playful nature."
+  "Elephants - Largest land animals, known for their intelligence and memory."
+  ...
+
+Search with something like:
+  "that bird that cannot fly" -> // 🐧 <Penguin Description> 🐧
+```
 
 The repository includes code that demonstrates how to search the database for similar text data based on cosine similarity scores between the input query and the stored embeddings.
 
