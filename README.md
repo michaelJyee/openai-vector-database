@@ -51,7 +51,7 @@ configure .env file
 # .env
 
 POSTGRESQL_CONNECTION = "<POSTGRES STRING CONNECTION>"
-OPENAI_API_KEY        = "<OPENAI API KEY>";
+OPENAI_API_KEY        = "<OPENAI API KEY>"
 ```
 
 Create Table
