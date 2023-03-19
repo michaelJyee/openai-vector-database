@@ -5,17 +5,18 @@ main();
 
 async function main () {
     const searchFor = "a bird that cannot fly";
+    console.log("Searching for something like:", searchFor);
     const vector = await createEmbedding(searchFor);
 
     let result = await _searchByVector(vector);
-    console.log("query result:", result.rows);
+    console.log("closest result:", result.rows);
 }
 
 async function _searchByVector (vector) {
     vector = JSON.stringify(vector);
     const query = `
         /* Find Record By Cosine Distance */
-        SELECT "description" FROM items
+        SELECT "description",  "embedding" <=> '${vector}' as cosine_distance FROM items
         ORDER BY "embedding" <=> '${vector}'
         LIMIT 1;
     `;
