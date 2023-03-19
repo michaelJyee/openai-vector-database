@@ -62,11 +62,15 @@ node create_table.js
 
 Create Records
 
+This creates records of animal descriptions
+
 ```bash
 node create_records.js
 ```
 
 Search Records
+
+Search for an "a bird that cannot fly" -> Should Return a penguin 
 
 ```bash
 node find_records.js
