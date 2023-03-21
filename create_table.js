@@ -8,7 +8,7 @@ async function main () {
         CREATE EXTENSION IF NOT EXISTS Vector;
 
         /* 2. Create Table With Vector Column */
-        CREATE TABLE IF NOT EXISTS "items" (
+        CREATE TABLE IF NOT EXISTS "animals" (
             description  varchar,
             embedding    vector(1536) /* openAi vector's have 1536 demensions */
         );
