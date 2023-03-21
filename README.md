@@ -73,5 +73,5 @@ Search Records
 Search for an "a bird that cannot fly" -> Should Return a penguin 
 
 ```bash
-node find_records.js
+node find_record.js
 ```
